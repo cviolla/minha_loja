@@ -693,20 +693,34 @@ footer {
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
-        padding: calc(1rem + env(safe-area-inset-top)) 4% 1rem;
-        gap: 1.5rem;
+        padding: calc(0.8rem + env(safe-area-inset-top)) 4% 0.8rem;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
     }
 
     .nav-links .nav-link {
-        display: none;
+        display: block;
+        font-size: 0.7rem;
+        padding: 0.5rem 0.8rem;
+        border: 1px solid var(--border-color);
+        white-space: nowrap;
+    }
+
+    .cart-trigger {
+        padding: 0.5rem 0.8rem;
     }
 
     .category-filters {
-        width: 100%;
-        max-width: none;
-        justify-content: flex-start;
+        display: none;
     }
 
     .hero-content h1 {
