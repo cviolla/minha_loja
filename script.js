@@ -26,36 +26,7 @@ let currentQty = 1;
 /**
  * Initialize Category Tabs
  */
-function initCategories() {
-    const filterContainer = document.getElementById('category-filters');
-    const categories = [...new Set(products.map(p => p.category))];
 
-    categories.forEach(cat => {
-        const tab = document.createElement('div');
-        tab.className = 'category-tab';
-        tab.innerText = cat;
-        tab.setAttribute('data-filter', cat);
-        tab.addEventListener('click', () => {
-            // Update active state
-            document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
-
-            // Filter products
-            currentFilter = cat;
-            renderProducts();
-        });
-        filterContainer.appendChild(tab);
-    });
-
-    // Special listener for "All/Tudo"
-    const allTab = filterContainer.querySelector('[data-filter="all"]');
-    allTab.addEventListener('click', () => {
-        document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
-        allTab.classList.add('active');
-        currentFilter = 'all';
-        renderProducts();
-    });
-}
 
 /**
  * Render products to grid
@@ -334,7 +305,7 @@ function setupBottomBar() {
 
 // Initialize on load
 document.addEventListener('DOMContentLoaded', () => {
-    initCategories();
+    // Categories removed by user request
     renderProducts();
     setupSearch();
     setupBottomBar();
