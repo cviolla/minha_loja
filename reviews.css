@@ -1,0 +1,111 @@
+/* Reviews Section */
+.section-header-center {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-title-center {
+    font-size: 2.5rem;
+    color: var(--text-main);
+    text-transform: uppercase;
+}
+
+.reviews-summary-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.rating-overview {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rating-score {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--primary);
+    line-height: 1;
+}
+
+.stars-container {
+    display: flex;
+    gap: 0.2rem;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.rating-total {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 700;
+}
+
+.filter-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.custom-select-wrapper {
+    position: relative;
+    width: 200px;
+}
+
+.custom-select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background: var(--bg-dark);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    appearance: none;
+    -webkit-appearance: none;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.custom-select:focus {
+    border-color: var(--primary);
+}
+
+.select-arrow {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary);
+    pointer-events: none;
+    font-size: 0.8rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .reviews-summary-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rating-overview {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .filter-container {
+        width: 100%;
+    }
+
+    .custom-select-wrapper {
+        width: 100%;
+    }
+}

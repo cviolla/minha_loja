@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+  <meta charset="utf-8" />
+
+  <base href="/app/">  
+  <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta name="google" content="notranslate" />
+  <meta name="color-scheme" content="light" />
+  <meta name="viewport"
+    content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Peça agora! É Fácil e Rápido" />
+  <meta property="og:description" content="Peça agora. É rápido e fácil" />
+
+  <meta name="google-adsense-account" content="ca-pub-9483899655218856">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?release=1771013362" crossorigin="anonymous"></script>
+
+  <!-- tuna -->
+  <script src="https://storage.googleapis.com/tuna-statics/tuna-v2.js?release=1771013362"></script>
+  <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/tuna-statics/components.min.css?release=1771013362">
+  
+  <!-- cache bust -->
+
+  <!--begin_default_title-->
+  <meta property="og:title" content="Pedir Delivery" />
+  <title>Pedir Delivery</title>
+  <!--end_default_title-->
+
+  <!--begin_default_image-->
+  <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
+  <meta property="og:image" content="assets/icon/favicon.png" />
+  <!--end_default_image-->
+
+  <!--begin_custom_meta_tags-->
+  <!--end_custom_meta_tags-->
+
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <link rel="preconnect" href="//www.googletagmanager.com/" >
+  <link rel="preconnect" href="//cdn.onesignal.com/" >
+  <link rel="preconnect" href="//connect.facebook.net/" >
+
+  <link rel="preconnect"   href="//api.multipedidos.com.br/" >
+  <link rel="preconnect"   href="//images.multipedidos.com.br/" >
+
+  <!-- <script src="https://js.sentry-cdn.com/702fa4626cde9878e3e0283cfe951702.min.js?release=1771013362" crossorigin="anonymous"></script> -->
+	<script>
+		// Sentry.onLoad(function() {
+		// 	console.log('teste')
+		// 	Sentry.init();
+		// });
+
+		var ua = navigator.userAgent;
+		var isInstagram = (ua.indexOf('Instagram') > -1) ? true : false;
+		if (isInstagram) {
+			function handleWindowOnError(message, source, lineno, colno, error) {
+				const error_message = JSON.stringify({
+					message: message,
+					source: source,
+					line: lineno,
+					column: colno,
+					error: error,
+				}, null, 2);
+
+				alert(`Erro instagram: ${error_message}`);
+		
+				return false;
+			}
+			
+			window.onerror = handleWindowOnError;
+			
+			function globalErrorHandler(event) {
+				if (event instanceof ErrorEvent) {
+					let error_message = JSON.stringify({
+						message: event.message,
+						source: event.filename,
+						line: event.lineno,
+						column: event.colno,
+						error: event.error,
+					}, null, 2);
+			
+					alert(`Erro instagram: ${error_message}`);
+				} else if (event instanceof PromiseRejectionEvent) {
+					alert(`Erro instagram de promessa rejeitada: ${event.reason}`);
+				}
+			}
+			
+			window.addEventListener("error", globalErrorHandler, true);
+			window.addEventListener("unhandledrejection", globalErrorHandler);
+		}
+	</script>
+<link rel="stylesheet" href="styles.726646b8f457d0c2c3e0.css?release=1771013362"></head>
+
+<body>
+  <app-root></app-root>
+<script src="runtime.5ad221a56938a7633b90.js?release=1771013362" defer></script><script src="polyfills.1a646cb7af049f7d812e.js?release=1771013362" defer></script><script src="vendor.5343e58a166a6c688098.js?release=1771013362" defer></script><script src="main.b6c3180ed4dba1d73e6f.js?release=1771013362" defer></script></body>
+
+
+<script async src="//www.googletagmanager.com/gtag/js?id=UA-123254716-2"></script>
+<script async src="//cdn.onesignal.com/sdks/OneSignalSDK.js?release=1771013362"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-123254716-2');
+
+  var OneSignal = OneSignal || [];
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/OneSignalSDKWorker.js').then(function (registration) {
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, function (err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    });
+  }
+
+  !function (f, b, e, v, n, t, s) {
+    if (f.fbq) return; n = f.fbq = function () {
+      n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+    n.queue = []; t = b.createElement(e); t.async = !0;
+    t.src = v; s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+  }(window, document, 'script',
+    '//connect.facebook.net/en_US/fbevents.js?xfbml=false');
+    fbq('init', '1459984528130494');
+    fbq('track', 'PageView');
+</script>
+
+<script>
+	Element.prototype.scrollIntoViewPromise = function(options){
+		try{
+			this.scrollIntoView(options);
+
+			const parent = this;
+
+			return {
+				then: (callback) => {
+					const intersectionObserver = new IntersectionObserver((entries) => {
+						let [entry] = entries;
+
+						if (entry.isIntersecting) {
+							setTimeout(() => {
+								callback();
+								intersectionObserver.unobserve(parent)
+							}, 300);
+						}
+					});
+					intersectionObserver.observe(parent);
+				}
+			};
+		}catch (e){ 
+			console.error(e);
+		}
+	}
+</script>
+</html>
