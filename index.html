@@ -28,7 +28,7 @@
 
     <!-- Navigation -->
     <nav>
-        <div class="logo">MINHA LOJA</div>
+        <div class="logo" data-config="store_name">MINHA LOJA</div>
 
 
 
@@ -44,10 +44,10 @@
     <!-- Hero Section -->
     <header class="scan-effect">
         <div class="hero-content">
-            <h1>MINHA<span>LOJA</span></h1>
+            <h1 data-config="store_name_hero">MINHA<span>LOJA</span></h1>
             <p><a href="https://maps.app.goo.gl/y9p4F33yNEASeueF8" target="_blank"
                     style="color: inherit; text-decoration: none;">
-                    Meu Local
+                    <span data-config="address_hero">Meu Local</span>
                 </a></p>
             <div id="store-status" class="store-status">Verificando status...</div>
             <div class="info-buttons-grid">
@@ -304,9 +304,9 @@
             <button class="close-modal" onclick="closeAll()">&times;</button>
             <h3>DADOS_SISTEMA</h3>
             <div class="info-details">
-                <p><strong>ENDEREÇO:</strong> Meu Local</p>
-                <p><strong>CONTATO:</strong> (21) 98101-1151</p>
-                <p><strong>SOCIAL:</strong> acaidafila.rj</p>
+                <p><strong>ENDEREÇO:</strong> <span data-config="address_info">Meu Local</span></p>
+                <p><strong>CONTATO:</strong> <span data-config="contact_info">(21) 98101-1151</span></p>
+                <p><strong>SOCIAL:</strong> <span data-config="social_info">acaidafila.rj</span></p>
             </div>
             <a href="https://maps.app.goo.gl/y9p4F33yNEASeueF8" target="_blank" class="btn btn-primary btn-block"
                 style="margin-top: 2rem; display: block; text-align: center; text-decoration: none;">VER NO MAPA</a>
@@ -339,7 +339,8 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <input type="file" id="image-upload-input" style="display:none" accept="image/*">
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>

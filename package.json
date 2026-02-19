@@ -1,14 +1,12 @@
 {
-  "name": "projeto-vendas",
+  "name": "minha-loja-vendas",
   "version": "1.0.0",
-  "description": "Vitrine de Vendas Premium - Neural-Net Catalyst",
-  "main": "script.js",
+  "description": "Loja de vendas premium com Firebase",
   "scripts": {
-    "dev": "npx live-server --port=5500 --no-browser",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx serve .",
+    "dev": "npx serve ."
   },
-  "keywords": [],
-  "author": "Antigravity AI",
-  "license": "ISC",
-  "type": "commonjs"
+  "dependencies": {
+    "firebase": "^10.8.0"
+  }
 }
